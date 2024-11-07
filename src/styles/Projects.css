@@ -1,0 +1,177 @@
+/* Estilo general de la sección */
+.sectionContainer {
+  padding: 2rem;
+  font-family: 'Arial', sans-serif;
+}
+
+.infoProject {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.tituloSection {
+  margin-top: 100px;
+  font-size: 32px;
+  margin-bottom: 100px;
+}
+
+/* Estilos del contenedor del carrusel */
+.contenedores {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+/* Estilos de cada tarjeta del carrusel */
+.card {
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card h2 {
+  font-size: 1.8rem;
+  color: #f8d7ff;
+  height: 2.5rem; 
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; 
+}
+
+.cardImg {
+  width: 90%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 1rem 0;
+}
+
+.linksContainer {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1rem;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.links:hover {
+  color: #eeaaff;
+}
+
+.iconoCard, .deploy, .github {
+  width: 20px;
+  height: 20px;
+  margin-right: 0.5rem;
+}
+
+/* Estilo del modal */
+.modalContent {
+  background-color: rgb(253, 245, 255);
+  padding: 20px;
+  border-radius: 8px;
+  margin: auto; 
+  text-align: center; 
+  width: 90%; /* Ajuste a 90% del ancho en móviles */
+  max-width: 400px; /* Máximo ancho */
+  max-height: 80vh; /* Altura máxima para el modal */
+  overflow-y: auto; /* Habilitar desplazamiento vertical si el contenido es demasiado largo */
+}
+
+.modalContent h1 {
+  font-size: 1.5rem; /* Tamaño de fuente ajustado para h1 en móviles */
+}
+
+.modalContent p {
+  font-size: 1.2rem; /* Tamaño de fuente ajustado para párrafos en móviles */
+  line-height: 1.4; /* Mejora la legibilidad */
+}
+
+.modalContent h3 {
+  font-size: 0.9rem; /* Tamaño de fuente ajustado para h3 en móviles */
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  .sectionContainer {
+    padding: 1rem;
+  }
+  .contenedores {
+    max-width: 100%;
+  }
+
+  .card {
+    padding: 1rem;
+  }
+
+  .cardImg {
+    height: 150px; /* Altura de la imagen para móviles */
+  }
+
+  .modalContent {
+    width: 85%; /* Ajusta el ancho a un 85% del viewport */
+    max-width: 300px; /* Reduce el tamaño máximo en móviles */
+    border-radius: 10px; /* Puedes ajustar el border-radius según el diseño deseado */
+    padding: 15px; /* Reduce el padding para móviles */
+  }
+
+  .modalContent h1 {
+    font-size: 1.3rem; /* Tamaño de fuente ajustado para h1 en móviles */
+  }
+
+  .modalContent p {
+    font-size: 0.9rem; /* Tamaño de fuente ajustado para párrafos en móviles */
+  }
+
+  .modalContent h3 {
+    font-size: 0.8rem; /* Tamaño de fuente ajustado para h3 en móviles */
+  }
+
+  .linksContainer {
+    flex-direction: column; /* Cambia la dirección a columna en móviles */
+  }
+
+  .links {
+    margin-bottom: 0.5rem; /* Espacio entre los links */
+  }
+}
+
+/* Galería */
+.modalContent .gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Permite que las imágenes se ajusten en varias filas */
+  gap: 10px;
+}
+
+.galleryItem {
+  flex: 1 1 calc(50% - 10px); 
+  max-width: 100%; /* Asegura que no se desborde */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalImage {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.modalImage:hover {
+  transform: scale(1.05);
+}

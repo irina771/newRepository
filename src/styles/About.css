@@ -1,0 +1,87 @@
+/* Sección general */
+.about-section {
+    padding: 50px 0;
+    background-color: #282c34;
+}
+
+.tituloSection {
+    color: aliceblue;
+    text-align: center; 
+    margin-top: 30px;
+    font-size: 35px;
+    font-family: monospace;
+}
+
+/* Contenedor principal de About */
+.about-container {
+    display: flex;
+    align-items: flex-start; 
+    justify-content: flex-start;
+    margin-top: 50px; 
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en móviles */
+    text-align: center; /* Asegura que el contenido se centre en móviles */
+}
+
+/* Imagen */
+.img-yo {
+    background-image: url('../assets/irina.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 25%; 
+    height: 550px; 
+    margin-left: 10%; 
+    border-radius: 10px;
+    background-repeat: no-repeat;
+}
+
+/* Contenedor de texto */
+.text-container {
+    flex: 1; 
+    margin-top: 7%;
+    color: aliceblue;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 25px;
+    border: 2px solid #d400ff; 
+    border-radius: 10px;
+    box-shadow: 0 0 15px #cc00ff; 
+    padding: 10px;
+    text-align: center; /* Centra el texto */
+}
+
+h3 {
+    margin: 5px 0;
+}
+
+/* Estilos responsivos para móviles */
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column; /* Cambia la disposición a columna en móviles */
+        align-items: center; /* Centra los elementos en móviles */
+    }
+
+    .img-yo {
+        width: 50%; /* La imagen ocupará el 100% del ancho en móviles */
+        height: 400px; /* Ajusta la altura para móviles */
+        margin: 0 auto; /* Centra la imagen horizontalmente */
+        margin-bottom: 50px; /* Añade espacio debajo de la imagen */
+    }
+
+    .text-container {
+        margin-top: 0; /* Elimina el margen superior en móviles */
+        margin-left: 0;
+        margin-right: 0;
+        width: 90%; /* La caja de texto ocupará el 90% del ancho en móviles */
+        font-size: 20px; /* Reduce un poco el tamaño de fuente en móviles */
+        text-align: center; /* Asegura que el texto esté centrado */
+    }
+}
+@media (min-width: 1920px) {
+    .img-yo {
+        width: 20%; /* Ajusta el ancho en pantallas grandes */
+        height: 600px; /* Incrementa un poco la altura */
+        background-size: contain; /* Cambia a contain para que no se corte */
+        margin-left: 15%; /* Ajusta el margen si es necesario */
+        background-repeat: no-repeat;
+    }
+}

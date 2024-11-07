@@ -1,14 +1,20 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
+import React from "react";
+import { createRoot } from 'react-dom/client';
+import { BrowserRouter as Router } from "react-router-dom";
+import App from "./App"; // o cualquier otro componente que contenga tus rutas
+import "./index.css";
+import { LanguageProvider } from "../src/components/language";
 import reportWebVitals from './reportWebVitals';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const domNode = document.getElementById('root');
+const root = createRoot(domNode);
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  <Router>
+    <LanguageProvider>
+      <App />
+    </LanguageProvider>
+  </Router>,
+  
 );
 
 // If you want to start measuring performance in your app, pass a function

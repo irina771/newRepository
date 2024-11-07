@@ -1,0 +1,29 @@
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 80px; /* Ajusta según el diseño */
+  margin: 10px;
+}
+
+.skill-icon {
+  width: 50px;  /* Ajusta el tamaño según el diseño */
+  height: 50px; /* Esto asegura que el ícono mantenga sus proporciones */
+  object-fit: contain; /* Esto evita que la imagen se recorte */
+  margin-bottom: 5px;
+}
+
+.skill-item span {
+  font-size: 14px;
+  color: #fff; /* Cambia según tu diseño */
+}
