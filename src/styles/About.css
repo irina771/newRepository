@@ -78,10 +78,10 @@ h3 {
 }
 @media (min-width: 1920px) {
     .img-yo {
-        width: 20%; /* Ajusta el ancho en pantallas grandes */
-        height: 600px; /* Incrementa un poco la altura */
-        background-size: contain; /* Cambia a contain para que no se corte */
-        margin-left: 15%; /* Ajusta el margen si es necesario */
+        width: 20%; 
+        height: 600px; 
+        background-size: contain; 
+        margin-left: 15%; 
         background-repeat: no-repeat;
     }
 }
