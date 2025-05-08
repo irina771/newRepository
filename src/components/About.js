@@ -40,7 +40,7 @@ function About() {
             <p>{textos[language].descripcion}</p>
             <ul>
               {textos[language].habilidades.map((habilidad, index) => (
-                <li key={index}>{habilidad}</li>
+                <p key={index}>{habilidad}</p>
               ))}
             </ul>
           </div>

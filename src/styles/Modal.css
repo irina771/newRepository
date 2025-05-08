@@ -14,12 +14,12 @@
 }
 
 .modalContainer {
-  background-color: rgb(253, 245, 255);
+  background-color:rgb(165, 118, 177);
   border: 4px solid #d400ff; 
-  padding: 20px 0; /* Solo padding vertical, sin padding lateral */
+  padding: 30px;
   border-radius: 8px;
-  max-width: 600px; /* Máximo ancho en pantallas grandes */
-  width: 90%; /* Ajuste en móviles para ocupar el 90% del ancho */
+  max-width: 500px; /* Máximo ancho en pantallas grandes */
+  width: auto; /* Ajuste en móviles para ocupar el 90% del ancho */
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
   position: relative;
 

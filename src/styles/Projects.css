@@ -10,7 +10,7 @@
 }
 
 .tituloSection {
-  margin-top: 100px;
+  margin-top: 150px;
   font-size: 32px;
   margin-bottom: 100px;
 }
@@ -79,13 +79,12 @@
 
 /* Estilo del modal */
 .modalContent {
-  background-color: rgb(253, 245, 255);
-  padding: 20px;
+  background-color: rgb(165, 118, 177);
   border-radius: 8px;
   margin: auto; 
   text-align: center; 
-  width: 90%; /* Ajuste a 90% del ancho en móviles */
-  max-width: 400px; /* Máximo ancho */
+  width: 100%; /* Ajuste a 90% del ancho en móviles */
+  max-width: 500px; /* Máximo ancho */
   max-height: 80vh; /* Altura máxima para el modal */
   overflow-y: auto; /* Habilitar desplazamiento vertical si el contenido es demasiado largo */
 }
@@ -167,11 +166,7 @@
 .modalImage {
   width: 100%;
   height: auto;
-  object-fit: cover;
   border-radius: 8px;
-  transition: transform 0.3s ease;
 }
 
-.modalImage:hover {
-  transform: scale(1.05);
-}
+

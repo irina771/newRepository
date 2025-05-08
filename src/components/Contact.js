@@ -6,7 +6,7 @@ const textos = {
   es: {
     titulo: "Contáctame ahora!",
     email: "📧",
-    emailLink: "irinairinadominguez7@gmail.com",
+    emailLink: "irinairinadominguez@gmail.com",
     phone: "📱",
     phoneLink: "+5492342482716",
     copy: "Copiar",
@@ -14,7 +14,7 @@ const textos = {
   en: {
     titulo: "Contact me now!",
     email: "📧",
-    emailLink: "irinairinadominguez7@gmail.com",
+    emailLink: "irinairinadominguez@gmail.com",
     phone: "📱",
     phoneLink: "+5492342482716",
     copy: "Copy",

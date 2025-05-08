@@ -20,6 +20,8 @@ const textos = {
       "En este proyecto con mi grupo hicimos la entrega final para Soy Henry. Nuestro proyecto se centró en crear una página que ayude a un refugio de perritos aceptando donaciones, creando un carrito de compras para ayudar al refugio y adoptar perritos o ser su casa transitoria.",
     descripcion4:
       "En esta página hice mi primer proyecto de forma individual como estudiante en Soy Henry donde muestra información detallada sobre cada perro incluyendo una sección en la que los usuarios puedan crear y agregar perros a la página.",
+    descripcion5:
+      "Este proyecto se realizó para un portafolio de ilustraciones con la temática 'galería de arte'. Lo realicé con React, Javascript y Css."
   },
   en: {
     titulo: "Projects",
@@ -33,7 +35,9 @@ const textos = {
       "In this project with my group we made the final delivery for Soy Henry. Our project focused on creating a page that helps a dog shelter by accepting donations, creating a shopping cart to help the shelter and adopt dogs or be their transitional home .",
     descripcion4:
       "On this page I did my first project individually as a student on Soy Henry where it shows detailed information about each dog including a section where users can create and add dogs to the page.",
-  },
+    descripcion5:
+      "This project was created for an illustration portfolio with an 'art gallery' theme. I built it using React, JavaScript, and CSS."
+    },
 };
 
 const projectsData = [
@@ -67,6 +71,13 @@ const projectsData = [
     deployLink: "https://dog-client.vercel.app",
     description: { es: textos.es.descripcion4, en: textos.en.descripcion4 },
     gallery: [require("../assets/pi3.png"),],
+  },
+  {
+    title: { es: "Portafolio de arte", en: "Art Portfolio" },
+    image: require("../assets/portfolio_art.png"),
+    deployLink: "https://portafolio-arte-nine.vercel.app",
+    description: { es: textos.es.descripcion5, en: textos.en.descripcion5 },
+    gallery: [require("../assets/portfolio_art2.png"),],
   },
 ];
 

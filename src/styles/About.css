@@ -7,7 +7,6 @@
 .tituloSection {
     color: aliceblue;
     text-align: center; 
-    margin-top: 30px;
     font-size: 35px;
     font-family: monospace;
 }
@@ -17,27 +16,15 @@
     display: flex;
     align-items: flex-start; 
     justify-content: flex-start;
-    margin-top: 50px; 
+   
     flex-wrap: wrap; /* Permite que los elementos se ajusten en móviles */
     text-align: center; /* Asegura que el contenido se centre en móviles */
-}
-
-/* Imagen */
-.img-yo {
-    background-image: url('../assets/irina.jpg');
-    background-size: cover;
-    background-position: center;
-    width: 25%; 
-    height: 550px; 
-    margin-left: 10%; 
-    border-radius: 10px;
-    background-repeat: no-repeat;
 }
 
 /* Contenedor de texto */
 .text-container {
     flex: 1; 
-    margin-top: 7%;
+ 
     color: aliceblue;
     margin-left: 10%;
     margin-right: 10%;
@@ -60,12 +47,6 @@ h3 {
         align-items: center; /* Centra los elementos en móviles */
     }
 
-    .img-yo {
-        width: 50%; /* La imagen ocupará el 100% del ancho en móviles */
-        height: 400px; /* Ajusta la altura para móviles */
-        margin: 0 auto; /* Centra la imagen horizontalmente */
-        margin-bottom: 50px; /* Añade espacio debajo de la imagen */
-    }
 
     .text-container {
         margin-top: 0; 
@@ -74,14 +55,5 @@ h3 {
         width: 90%; 
         font-size: 20px; 
         text-align: center; 
-    }
-}
-@media (min-width: 1920px) {
-    .img-yo {
-        width: 20%; 
-        height: 600px; 
-        background-size: contain; 
-        margin-left: 15%; 
-        background-repeat: no-repeat;
     }
 }
