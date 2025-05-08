@@ -42,6 +42,13 @@ const textos = {
 
 const projectsData = [
   {
+    title: { es: "Portafolio de arte", en: "Art Portfolio" },
+    image: require("../assets/portfolio_art.png"),
+    deployLink: "https://portafolio-arte-nine.vercel.app",
+    description: { es: textos.es.descripcion5, en: textos.en.descripcion5 },
+    gallery: [require("../assets/portfolio_art2.png"),],
+  },
+  {
     title: { es: "Hit the road jack", en: "Hit the road jack" },
     image: require("../assets/pasantía.png"),
     deployLink: "https://www.hittheroadjack.co",
@@ -72,13 +79,7 @@ const projectsData = [
     description: { es: textos.es.descripcion4, en: textos.en.descripcion4 },
     gallery: [require("../assets/pi3.png"),],
   },
-  {
-    title: { es: "Portafolio de arte", en: "Art Portfolio" },
-    image: require("../assets/portfolio_art.png"),
-    deployLink: "https://portafolio-arte-nine.vercel.app",
-    description: { es: textos.es.descripcion5, en: textos.en.descripcion5 },
-    gallery: [require("../assets/portfolio_art2.png"),],
-  },
+  
 ];
 
 function Projects() {
