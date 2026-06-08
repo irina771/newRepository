@@ -21,8 +21,10 @@ const textos = {
     descripcion4:
       "En esta página hice mi primer proyecto de forma individual como estudiante en Soy Henry donde muestra información detallada sobre cada perro incluyendo una sección en la que los usuarios puedan crear y agregar perros a la página.",
     descripcion5:
-      "Este proyecto se realizó para un portafolio de ilustraciones con la temática 'galería de arte'. Lo realicé con React, Javascript y Css."
-  },
+      "Este proyecto se realizó para un portafolio de ilustraciones con la temática 'galería de arte'. Lo realicé con React, Javascript y Css.",
+    descripcion6:
+      "WiFi Calc Optimizer es un proyecto desarrollado en grupo con Javascript y React enfocado en la optimización de redes Wi-Fi, que integra simulaciones interactivas, mapas de calor y análisis de cobertura para ofrecer una experiencia intuitiva de planificación y monitoreo de redes inalámbricas."
+    },
   en: {
     titulo: "Projects",
     fecha: "Made since:",
@@ -36,11 +38,21 @@ const textos = {
     descripcion4:
       "On this page I did my first project individually as a student on Soy Henry where it shows detailed information about each dog including a section where users can create and add dogs to the page.",
     descripcion5:
-      "This project was created for an illustration portfolio with an 'art gallery' theme. I built it using React, JavaScript, and CSS."
+      "This project was created for an illustration portfolio with an 'art gallery' theme. I built it using React, JavaScript, and CSS.",
+    descripcion6:
+    "WiFi Calc Optimizer is a collaborative project developed with JavaScript and React, designed to optimize Wi-Fi networks through interactive simulations, heat map visualization, and coverage analysis. The platform provides an intuitive way to plan, analyze, and improve wireless network performance."
     },
 };
 
 const projectsData = [
+  {
+    title: { es: "Wifi Calc Optimizer", en: "Wifi Calc Optimizer" },
+    image: require("../assets/wificalc.png"),
+    githubLink: "https://gitlab.com/irinaD/capstone-calculo",
+    deployLink: "https://capstone-calculo-e5ue.vercel.app",
+    description: { es: textos.es.descripcion6, en: textos.en.descripcion6 },
+    gallery: [require("../assets/wificalc2.png"),],
+  },
   {
     title: { es: "Portafolio de arte", en: "Art Portfolio" },
     image: require("../assets/portfolio_art.png"),
@@ -141,7 +153,7 @@ function Projects() {
                   className='links'
                 >
                   <img src={DeployIcon} alt="Deploy icon" className="deploy" />
-                  Deploy
+                  Enlace
                 </a>
               </div>
             </div>
@@ -167,7 +179,6 @@ function Projects() {
             </div>
 
             <p>{projectsData[selectedProject].description[language]}</p>
-            <h3>{textos[language].fecha} Jun.2023</h3>
           </div>
         </Modal>
       )}

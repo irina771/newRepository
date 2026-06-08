@@ -15,6 +15,7 @@ const Skills = () => {
 
     const skills = [
         { name: "Javascript", icon: require("../assets/iconsSkills/javascript.png") },
+        { name: "Java", icon: require("../assets/iconsSkills/java.png") },
         { name: "Typescript", icon: require("../assets/iconsSkills/typescript.png") },
         { name: "NodeJS", icon: require("../assets/iconsSkills/nodejs.png") },
         { name: "CSS", icon: require("../assets/iconsSkills/css.png") },
@@ -28,7 +29,8 @@ const Skills = () => {
         { name: "Npm", icon: require("../assets/iconsSkills/npm.png") },
         { name: "Sass", icon: require("../assets/iconsSkills/sass.png") },
         { name: "Git", icon: require("../assets/iconsSkills/git.png") },
-        { name: "GitHub", icon: require("../assets/iconsSkills/github.png") }
+        { name: "GitHub", icon: require("../assets/iconsSkills/github.png") },
+        { name: "GitLab", icon: require("../assets/iconsSkills/gitlab.png") },
     ];    
 
     return (

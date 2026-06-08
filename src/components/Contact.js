@@ -8,7 +8,7 @@ const textos = {
     email: "📧",
     emailLink: "irinairinadominguez@gmail.com",
     phone: "📱",
-    phoneLink: "+5492342482716",
+    phoneLink: "+5492342445440",
     copy: "Copiar",
   },
   en: {
@@ -16,7 +16,7 @@ const textos = {
     email: "📧",
     emailLink: "irinairinadominguez@gmail.com",
     phone: "📱",
-    phoneLink: "+5492342482716",
+    phoneLink: "+5492342445440",
     copy: "Copy",
   },
 };

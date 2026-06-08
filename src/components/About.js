@@ -6,27 +6,17 @@ const textos = {
   es: {
     titulo: "Sobre mí",
     descripcion:
-      "Soy una apasionada desarrolladora web y móvil con experiencia en crear aplicaciones dinámicas y responsivas. Me encanta transformar ideas en productos digitales funcionales y atractivos. Además de mis conocimientos técnicos, también tengo habilidades en:",
-    habilidades: [
-      "Gestión de proyectos",
-      "Trabajo en equipo",
-      "Resolución de problemas",
-    ],
+      "Soy desarrolladora de software con experiencia en tecnologías web modernas y un fuerte interés por el desarrollo de soluciones escalables y centradas en el usuario. Disfruto colaborar en equipos multidisciplinarios, enfrentar desafíos técnicos y convertir ideas en productos digitales de impacto. Mis fortalezas incluyen la comunicación efectiva, la gestión de proyectos y la resolución de problemas.",
   },
   en: {
     titulo: "About Me",
     descripcion:
-      "I am a passionate web and mobile developer with experience in creating dynamic and responsive applications. I love transforming ideas into functional and appealing digital products. In addition to my technical knowledge, I also have skills in:",
-    habilidades: [
-      "Project management",
-      "Teamwork",
-      "Problem-solving",
-    ],
+      "I am a software developer with experience in modern web technologies and a strong interest in developing scalable, user-centered solutions. I enjoy collaborating in multidisciplinary teams, tackling technical challenges, and turning ideas into impactful digital products. My strengths include effective communication, project management, and problem-solving.",
   },
 };
 
 function About() {
-  const { language } = useLanguage(); // Desestructurar el idioma
+  const { language } = useLanguage();
 
   return (
     <>
@@ -38,11 +28,6 @@ function About() {
         <div className="text-container">
           <div>
             <p>{textos[language].descripcion}</p>
-            <ul>
-              {textos[language].habilidades.map((habilidad, index) => (
-                <p key={index}>{habilidad}</p>
-              ))}
-            </ul>
           </div>
         </div>
       </div>
